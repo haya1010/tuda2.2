@@ -1,0 +1,298 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #F9FBFE;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  cursor: pointer;
+}
+
+span.notice {
+  font-weight: lighter;
+  font-size: 12px;
+  color: grey;
+}
+
+.header {
+  position: relative;
+  background-color: #3b0a0a;
+  height: 50px;
+  margin: 0;
+}
+
+.header a.logo {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  left: 5%;
+  height: 100%;
+  line-height: 50px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.header a.logo:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .nav {
+  display: inline-block;
+  position: absolute;
+  height: 50px;
+  right: 5%;
+}
+
+.header .nav ul li {
+  line-height: 50px;
+  display: inline-block;
+  margin: 0;
+}
+
+.header .nav ul a {
+  line-height: 50px;
+  display: inline-block;
+  color: white;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.header .nav ul a:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container {
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+}
+
+.container .title {
+  margin: 10px;
+}
+
+.container .title h1 {
+  margin-bottom: 20px;
+}
+
+.container .title h2 {
+  font-size: 20px;
+}
+
+.container .todoTable .todos {
+  padding: 10px;
+  margin: 10px auto;
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+  border: 2px solid #58283c;
+  text-align: center;
+}
+
+.container .todoTable .todos .info {
+  position: relative;
+}
+
+.container .todoTable .todos .info span.author {
+  /* background-color: red; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  position: absolute;
+  left: 5%;
+}
+
+.container .todoTable .todos .info span.created_at {
+  /* background-color: pink; */
+  position: absolute;
+  right: 0;
+  font-weight: lighter;
+  font-size: 10px;
+  color: grey;
+}
+
+.container .todoTable .todos .info .heart {
+  color: gray;
+}
+
+.container .todoTable .todos .info .heart.liked {
+  color: pink;
+}
+
+.container .todoTable .todos .todo {
+  display: inline-block;
+  margin: 0 auto;
+  /* background-color: green; */
+}
+
+.container .todoTable .todos .todo a {
+  font-weight: bold;
+  line-height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .todoTable .todos .todo a .check {
+  display: inline-block;
+  color: green;
+  margin-left: 10px;
+}
+
+.container .form {
+  width: 40%;
+  padding: 20px;
+  margin: 10% auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.container .form h1.logo {
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 10px;
+}
+
+.container .form span.error {
+  font-weight: lighter;
+  font-size: 15px;
+  color: #e09d9d;
+}
+
+.container .form input {
+  margin-bottom: 5px;
+  height: 30px;
+  width: 80%;
+}
+
+.container .form input.submit {
+  width: 50%;
+}
+/*# sourceMappingURL=style2.css.map */
