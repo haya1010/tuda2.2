@@ -22,6 +22,7 @@
 // }
 // ↑ローカルで使う時
 
+// ↓リモートで使う時
 session_start();
 try {
     $con = new PDO('mysql:dbname=heroku_2687c39ba144552;host=us-cdbr-east-04.cleardb.com;charset=utf8',
@@ -29,5 +30,6 @@ try {
 } catch(PDOException $e) {
     print('DB接続エラー:' . $e->getMessage());
 }
+// ↑リモートで使う時
 
 ?>
