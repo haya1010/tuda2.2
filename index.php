@@ -1,10 +1,11 @@
 <?php
+// heroku
 require("includes/header.php");
 
 if (isset($_POST["likeButton"])) {
     $postId = $_POST["postId"];
     Likes::like($con, $userId, $postId);
-} 
+}
 ?>
 
     <div class="container">
@@ -21,8 +22,8 @@ if (isset($_POST["likeButton"])) {
         <br>
         <br>
 
-        <?php 
-        $todoControllers = $con->query("SELECT * FROM todocontroller ORDER BY id DESC"); 
+        <?php
+        $todoControllers = $con->query("SELECT * FROM todocontroller ORDER BY id DESC");
 
         while ($todoController = $todoControllers->fetch()) {
 
