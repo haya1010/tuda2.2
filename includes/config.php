@@ -25,7 +25,7 @@
 session_start();
 try {
     $con = new PDO('mysql:dbname=heroku_2687c39ba144552;host=us-cdbr-east-04.cleardb.com;charset=utf8',
-    'root', 'root');
+    'b6d756068fa695', '0d92fdd5');
 } catch(PDOException $e) {
     print('DB接続エラー:' . $e->getMessage());
 }
