@@ -11,11 +11,23 @@
 // catch (PDOException $e){
 //     exit("Connection failed: " . $e->getMessage());
 // }
+
+// ↓ローカルで使う時
+// session_start();
+// try {
+//     $con = new PDO('mysql:dbname=tuda2;host=localhost;port=8889;charset=utf8',
+//     'root', 'root');
+// } catch(PDOException $e) {
+//     print('DB接続エラー:' . $e->getMessage());
+// }
+// ↑ローカルで使う時
+
 session_start();
 try {
-    $con = new PDO('mysql:dbname=tuda2;host=localhost;port=8889;charset=utf8',
+    $con = new PDO('mysql:dbname=heroku_2687c39ba144552;host=us-cdbr-east-04.cleardb.com;charset=utf8',
     'root', 'root');
 } catch(PDOException $e) {
     print('DB接続エラー:' . $e->getMessage());
 }
+
 ?>
