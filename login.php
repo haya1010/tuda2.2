@@ -1,4 +1,5 @@
 <?php
+
 require("includes/config.php");
 require("includes/classes/Constants.php");
 require("includes/classes/Account.php");
