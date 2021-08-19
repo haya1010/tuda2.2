@@ -8,7 +8,7 @@ $account = new Account($con);
 if (isset($_POST["loginButton"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
-    
+
     $loginId = $account->login($username, $password);
     // var_dump($loginId);
     if ($loginId) {
@@ -26,6 +26,7 @@ function getInputValue($name) {
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <meta name="google-site-verification" content="2oiQ7jpso5JMgpa3KvMJNFMkleQy1zg9Hving6N9Rwk" />
     <title>Tuda</title>
     <link rel="stylesheet" href="assets/style2.css">
 </head>
